@@ -40,7 +40,7 @@
         function searchAndRedirect() {
             let searchQuery = document.getElementById("searchInput").value.trim();
             let domain = searchQuery.split('.').pop();
-            if (domain === "app" || domain === "io" || domain === "ai" || domain === "com") {
+            if (domain === "app" || domain === "io" || domain === "org" || domain === "gov" || domain === "biz" || domain === "ai" || domain === "com") {
                 window.location.href = "https://" + searchQuery;
             } else {
                 window.location.href = "https://www.google.com/search?q=" + searchQuery;
